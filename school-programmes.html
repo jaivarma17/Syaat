@@ -1,0 +1,322 @@
+<!-- header --> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Programmes</title>
+    
+        <!-- Tailwind CDN (Dev only, replace with local build in production) -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- Font Awesome Icons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    
+        <!-- Alpine.js -->
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
+        <!-- External CSS (Optional) -->
+        <link rel="stylesheet" href="styles.css">
+    
+        <!-- Debugging styles to ensure visibility -->
+        <style>
+            #header-container {
+                display: block !important;
+                visibility: visible !important;
+                background-color: yellow !important; /* Debug */
+                border: 2px solid red !important; /* Debug */
+                padding: 10px;
+            }
+        </style>
+    </head>
+    
+<body class="bg-gray-100">
+
+<!-- Top Thin Black Banner -->
+<div class="bg-black text-orange-500 py-2">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com/swamiamitdev" target="_blank" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/swamiamitdev" target="_blank" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/swamiamitdev/" target="_blank" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/swamiamitdev/" target="_blank" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=911140000777&text&type=phone_number&app_absent=0" target="_blank" class="hover:text-white"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@YogacharyaAmitDev" target="_blank" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="flex space-x-6">
+            <span><i class="fas fa-phone-alt"></i> +91 +91 11 40000700</span>
+            <span><i class="fas fa-envelope"></i> info@syaat.org</span>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Navigation Bar with Logo, Centered Menu, and Donate Button -->
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo (Aligned Left) -->
+        <a href="homepage.html">
+            <img src="images/logo-white.png" alt="Logo" style="height: 80px; width: auto;">
+        </a>
+
+                
+                <!-- Navigation Menu (Centered) -->
+                <div class="flex-1 flex justify-center">
+                    <ul id="menu" class="hidden md:flex space-x-2">
+                        <!-- SYAAT Dropdown -->
+                        <li class="relative group">
+                            <a href="homepage.html" class="hover:text-orange-500 px-4 py-2 block">SYAAT ▼</a>
+                            <ul class="absolute left-0 top-full hidden group-hover:flex flex-col bg-white shadow-md py-2 w-48">
+                                <li><a href="overview.html" class="block px-4 py-2 hover:bg-orange-500">Overview</a></li>
+                                <li><a href="guru-parampara.html" class="block px-4 py-2 hover:bg-orange-500">Guru Parampara</a></li>
+                                <li><a href="history.html" class="block px-4 py-2 hover:bg-orange-500">History</a></li>
+                                <li><a href="aims-and-objectives.html" class="block px-4 py-2 hover:bg-orange-500">Aims and Objectives</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="events.html" class="hover:text-orange-500 px-4 py-2 block">Events</a></li>
+                
+                        <!-- What We Do Dropdown with Nested Options -->
+                        <li class="relative group">
+                            <a href="#" class="hover:text-orange-500 px-4 py-2 block">What We Do ▼</a>
+                            <ul class="absolute left-0 top-full hidden group-hover:flex flex-col bg-white shadow-md py-2 w-48">
+                                <li><a href="yoga-camps.html" class="block px-4 py-2 hover:bg-orange-500">Yoga Camps</a></li>
+                                <li class="relative group">
+                                    <a href="#" class="block px-4 py-2 hover:bg-orange-500">Yoga Sessions ▼</a>
+                                    <ul class="absolute left-full top-0 hidden group-hover:flex flex-col bg-white shadow-md py-2 w-48">
+                                        <li><a href="corporate-yoga-sessions.html" class="block px-4 py-2 hover:bg-orange-500">Corporate</a></li>
+                                        <li><a href="individual-yoga-sessions.html" class="block px-4 py-2 hover:bg-orange-500">Individual</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="CSR.html" class="block px-4 py-2 hover:bg-orange-500">CSR</a></li>
+                                <li><a href="team-building-exercises.html" class="block px-4 py-2 hover:bg-orange-500">Team Building Exercises</a></li>
+                                <li><a href="school-programmes.html" class="block px-4 py-2 hover:bg-orange-500">School Programmes</a></li>
+                                <li><a href="media.html" class="block px-4 py-2 hover:bg-orange-500">Media</a></li>
+                            </ul>
+                        </li>
+                
+                        <!-- Get Involved Dropdown -->
+                        <li class="relative group">
+                            <a href="#" class="hover:text-orange-500 px-4 py-2 block">Get Involved ▼</a>
+                            <ul class="absolute left-0 top-full hidden group-hover:flex flex-col bg-white shadow-md py-2 w-48">
+                                <li><a href="become-a-volunteer.html" class="block px-4 py-2 hover:bg-orange-500">Become a Volunteer</a></li>
+                                <li><a href="organise-yoga-event.html" class="block px-4 py-2 hover:bg-orange-500">Organise Yoga Event</a></li>
+                                <li><a href="become-a-contributor.html" class="block px-4 py-2 hover:bg-orange-500">Become a Contributor</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="Maha-Prabhu-Ji-Centres.html" class="hover:text-orange-500 px-4 py-2 block">MahaPrabhu Ji's Centres</a></li>
+                
+                        <li><a href="contact.html" class="hover:text-orange-500 px-4 py-2 block">Contact</a></li>
+                    </ul>
+                </div>
+        
+        <!-- Donate Button (Aligned Right) -->
+        <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-600">
+            Donate
+        </a>
+    </div>
+</nav>
+
+<!-- Image Slider Section -->
+<header x-data="{ 
+    slides: [
+        { image: 'images/homepage-image1.webp', text: 'Yoga is the Practice of CALMING your Mind!' },
+        { image: 'images/homepage-image2.jpg', text: 'Find Your Inner Peace Through Yoga' },
+        { image: 'images/homepage-image3.jpg', text: 'Discover the Power of Mindfulness' },
+        { image: 'images/homepage-image4.jpg', text: 'Breathe. Stretch. Heal. Repeat.' }
+    ], 
+    activeIndex: 0,
+    textVisible: true,
+    changeSlide() {
+        this.textVisible = false; // Hide text before transition
+        setTimeout(() => {
+            this.activeIndex = (this.activeIndex + 1) % this.slides.length;
+        }, 500); // Image changes first (500ms delay)
+        
+        setTimeout(() => {
+            this.textVisible = true; // Show text after image transition
+        }, 1000); // Additional 800ms delay for the text
+    }
+}"
+x-init="setInterval(() => changeSlide(), 4000)"
+class="relative text-white text-center py-40 bg-cover bg-center overflow-hidden">
+
+    <!-- Image Backgrounds -->
+    <div class="absolute inset-0 w-full h-full">
+        <template x-for="(slide, index) in slides" :key="index">
+            <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+                 :style="'background-image: url(' + slide.image + ')'"
+                 x-show="activeIndex === index"
+                 x-transition:enter="opacity-0"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="opacity-100"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0">
+            </div>
+        </template>
+    </div>
+
+    <!-- Overlay (Enhances Text Visibility) -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <!-- Content Wrapper with Dynamic Text -->
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold"
+            x-text="slides[activeIndex].text"
+            x-show="textVisible"
+            x-transition:enter="opacity-0 translate-y-4 delay-700"
+            x-transition:enter-start="opacity-0 translate-y-4"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="opacity-100 translate-y-0"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 translate-y-4">
+        </h1>
+    </div>
+
+    <!-- View Events Button (Bottom Left) -->
+    <a href="events.html" target="_blank"
+       class="absolute bottom-8 left-8 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform transform hover:scale-105 z-20 pointer-events-auto"
+       x-show="textVisible"
+       x-transition:enter="opacity-0 translate-y-6 delay-1000"
+       x-transition:enter-start="opacity-0 translate-y-6"
+       x-transition:enter-end="opacity-100 translate-y-0"
+       x-transition:leave="opacity-100 translate-y-0"
+       x-transition:leave-start="opacity-100 translate-y-0"
+       x-transition:leave-end="opacity-0 translate-y-6">
+        View Events
+    </a>
+</header>
+
+
+<div class="flex items-stretch w-3/4 mx-auto gap-2.5 my-10">
+    <!-- Left Section: Text -->
+    <div class="w-3/5 text-left flex items-center">
+        <p class="text-gray-800 text-lg leading-relaxed">
+            Yoga in schools is a major part of the programmes we offer at Yog Abhyas Ashram. Children spent a lot of time sitting in classrooms, learning new things and trying to cope up with all the information. Their ability to perform well decreases, mood swings develop and stress becomes a permanent part of their nature leading to health problems later on.
+            <br><br>
+            Yoga is important to bring about a change in this situation. Children who practice Yoga are able to relax better, experience positive moods and benefit from improved posture. They also develop mind control and mental flexibility which are important life skills. Children learn how to control emotions through mindfulness and breathing exercises which makes them better human beings overall.
+        </p>
+    </div>
+
+    <!-- Right Section: Image -->
+    <div class="w-2/5 flex justify-end">
+        <img src="images/school-programmes.jpg" alt="Yoga Camp" class="w-full h-auto object-cover">
+    </div>
+</div>
+
+
+
+
+
+
+<!-- footer -->
+
+<div class="bg-orange-500 text-white py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <!-- Section 1: Logo -->
+        <div class="flex-shrink-0 mb-4 md:mb-0">
+            <img src="images/logo-banner.png" alt="Logo" class="h-16 w-auto">
+        </div>
+
+        <!-- Section 2: Text -->
+        <div class="text-center md:flex-1 md:px-6 max-w-4xl">
+            <p class="text-black text-lg font-medium">
+                In our yog ashram, we redefine yoga as a fusion of scientific inquiry and spiritual exploration, 
+                transcending mere religious connotations. Guided by the revered Guru Parampara lineage, 
+                we embrace the belief that every individual benefits from the wisdom and mentorship ('Guru') 
+                in their journey towards achieving holistic wellness and self-realization.
+            </p>
+        </div>
+
+        <!-- Section 3: Donate Now Button -->
+        <div class="mt-4 md:mt-0">
+            <a href="/donate" 
+               class="bg-white text-orange-500 font-semibold py-2 px-6 rounded-full shadow-md hover:bg-gray-100 transition">
+                Donate Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="bg-orange-900 text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- Section 1: Contact Information -->
+        <div>
+            <h3 class="text-xl font-semibold mb-3">Contact Information</h3>
+            <p>Head Quarters: Yogeshwar DeviDayal Mahamandir TM,</p>
+            <p>A-777, Block 8, Tilak Nagar,</p>
+            <p>New Delhi - 110018, Delhi, India</p>
+            <p>Email: <a href="mailto:info@syaat.org" class="underline">info@syaat.org</a></p>
+            <p>Phone: <a href="tel:+911140000777" class="underline">+91 11 400 00777</a></p>
+        </div>
+
+        <!-- Section 2: Important Links -->
+        <div>
+            <h3 class="text-xl font-semibold mb-3">Important Links</h3>
+            <ul class="space-y-2">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/about-organisation" class="hover:underline">About Organisation</a></li>
+                <li><a href="/about-syaat" class="hover:underline">About SYAAT</a></li>
+                <li><a href="/centers" class="hover:underline">Centers</a></li>
+                <li><a href="/events" class="hover:underline">Events</a></li>
+                <li><a href="/terms" class="hover:underline">Terms & Conditions</a></li>
+                <li><a href="/privacy-policy" class="hover:underline">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Support Us -->
+        <div>
+            <h3 class="text-xl font-semibold mb-3">Support Us</h3>
+            <ul class="space-y-2">
+                <li><a href="/volunteer" class="hover:underline">Become a Volunteer</a></li>
+                <li><a href="/organise-yoga" class="hover:underline">Organise Yoga Event</a></li>
+                <li><a href="/contributor" class="hover:underline">Become a Contributor</a></li>
+                <li><a href="/donate" class="hover:underline">Make a Donation</a></li>
+                <li><a href="/urgent-cause" class="hover:underline">Urgent Cause</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Newsletter & Social Media -->
+<div>
+    <h3 class="text-xl font-semibold mb-3">Newsletter</h3>
+    <p class="mb-3">Enter your mail here:</p>
+    <div class="flex items-center space-x-2">
+        <input type="email" placeholder="Your Email" class="px-3 py-2 text-black rounded-md w-full">
+        <button class="bg-orange-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-orange-600">
+            Subscribe
+        </button>
+    </div>
+
+    <!-- Connect With Us -->
+    <h3 class="text-xl font-semibold mt-6">Connect With Us</h3>
+
+    <!-- Social Media Icons -->
+    <div class="flex space-x-4 mt-3 text-white text-2xl">
+        <a href="https://www.facebook.com/swamiamitdev" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/swamiamitdev" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/swamiamitdev/" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/swamiamitdev/" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=911140000777&text&type=phone_number&app_absent=0" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.youtube.com/@YogacharyaAmitDev" target="_blank" class="hover:text-gray-300">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</div>
+
